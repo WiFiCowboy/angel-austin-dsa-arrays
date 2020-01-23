@@ -84,3 +84,16 @@
 //   return array;
 // }
 // console.log(zeros(grid));
+
+
+function strRot(str1, str2) {
+  for (let i = 0; i < str2.length; i++) {
+    str2 = str2.slice(1) + str2[0];
+    if (str1 === str2) {
+      return true;
+    } 
+  }
+  return false;
+}
+
+console.log(strRot('amazon', 'azonam'));
