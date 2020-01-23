@@ -5,12 +5,12 @@
 // console.log(urlify("https://www.hello world .com"))
 
 function filterArray (arr) {
-  let newArr = []
-  for(let i=0; i < arr.length; i++){
-    if(arr.includes(5))
-    arr.push(newArr)
+  const length = arr.length;
+  for (let i = 0; i < length; i++) {
+    const item = arr.shift();
+    if (item >= 5) arr.push(item);
   }
-  return newArr
+  return arr;
 }
 
-console.log(filterArray([10, 20, 5, 3, 15, 5]))
+console.log(filterArray([10, 20, 5, 3, 2, 15, 5]))
