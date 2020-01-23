@@ -5,8 +5,8 @@ class Array {
   constructor() {
     this.length = 0;
     this._capacity = 0;
-    let memory = new Memory();
-    this.ptr = memory.allocate(this.length);
+    this.memory = new Memory();
+    this.ptr = this.memory.allocate(this.length);
   }
 
   push(value) {
