@@ -29,10 +29,23 @@
 
 // console.log(max([4, 6, -3, 5, -2, 1]));
 
-
 // function merging(arr1, arr2) {
 //   let newArr = [...arr1, ...arr2];
 //   return newArr.sort((a,b) => a-b);
 // }
 // console.log(merging([1, 3, 6, 8, 11], [2, 3, 5, 8, 9, 10]))
 
+// function removeVowels(str) {
+//   return str.replace(/[aeiou]/, '')
+// }
+
+// console.log(removeVowels('Battle of the Vowels: Hawaii vs. Grozny', 'aeiou'))
+
+
+function products(arr) {
+  let prod = arr.reduce((prod, num) => (prod *= num), 1);
+  const newArr = arr.map(num => prod / num);
+  return newArr;
+}
+
+console.log(products([1, 3, 9, 4]))
