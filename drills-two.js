@@ -4,13 +4,35 @@
 
 // console.log(urlify("https://www.hello world .com"))
 
-function filterArray (arr) {
-  const length = arr.length;
-  for (let i = 0; i < length; i++) {
-    const item = arr.shift();
-    if (item >= 5) arr.push(item);
-  }
-  return arr;
-}
+// function filterArray (arr) {
+//   const length = arr.length;
+//   for (let i = 0; i < length; i++) {
+//     const item = arr.shift();
+//     if (item >= 5) arr.push(item);
+//   }
+//   return arr;
+// }
 
-console.log(filterArray([10, 20, 5, 3, 2, 15, 5]))
+// console.log(filterArray([10, 20, 5, 3, 2, 15, 5]))
+
+// function max(arr) {
+//   let maxSum = 0;
+//   let partialSum = 0;
+
+//   for (let item of arr) {
+//     partialSum += item;
+//     maxSum = Math.max(maxSum, partialSum);
+//     if (partialSum < 0) partialSum = 0;
+//   }
+//   return maxSum;
+// }
+
+// console.log(max([4, 6, -3, 5, -2, 1]));
+
+
+// function merging(arr1, arr2) {
+//   let newArr = [...arr1, ...arr2];
+//   return newArr.sort((a,b) => a-b);
+// }
+// console.log(merging([1, 3, 6, 8, 11], [2, 3, 5, 8, 9, 10]))
+
