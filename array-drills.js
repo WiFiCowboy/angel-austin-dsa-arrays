@@ -18,6 +18,12 @@ function main(){
   arr.pop();
 
   console.log(arr);
+
+//----drill 4 -----
+  console.log(arr.get(0));
+  arr.length = 0;
+  arr.push(25);
+  console.log(arr.get(0));
 }
 
 return main()
